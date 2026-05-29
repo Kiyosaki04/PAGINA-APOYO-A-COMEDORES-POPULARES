@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comedores Populares</title>
+
+    <link rel="stylesheet" href="Diseño.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Grupo de apoyo villarealino</div>
+
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Mapa</a></li>
+            <li><a href="#">Donaciones</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <h1>Grupo de apoyo villarealino</h1>
+
+            <p>
+                Nos encargarmos de brindar la mayor ayuda y conexion posible con las personas que mas lo necesitan
+                <br><br>
+                Si estas en las posibilidades de donar alimentos en buen estado no dudes en contactarte al comedor popular más cercano vía WhatsApp.
+            </p>
+
+            <a href="#map" class="hero-btn">Ver mapa</a>
+
+        </div>
+
+    </header>
+
+
+    <main class="container">
+
+        <section class="card auth">
+
+            <h2>Crear Usuario</h2>
+
+            <div class="input-group">
+                <input type="text" id="username" placeholder="Nombre">
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Correo">
+            </div>
+
+            <button onclick="register()">Registrarse</button>
+
+            <p id="message"></p>
+
+        </section>
+
+
+        <section class="card">
+
+            <h2>Mapa en tiempo real</h2>
+
+            <div id="map"></div>
+
+        </section>
+
+        <section class="card contact">
+
+            <h2>Contacto</h2>
+
+            <p>
+                Selecciona un comedor en el mapa para ver información.
+            </p>
+
+            <div id="info"></div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            ©2026 Comedores Populares | Ayudando a quienes más lo necesitan
+        </p>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
